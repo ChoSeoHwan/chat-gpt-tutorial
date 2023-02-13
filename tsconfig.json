@@ -1,0 +1,23 @@
+{
+  "extends": "@choseohwan/tsconfig-base",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "rootDir": "./",
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "~src/*": [
+        "src/*"
+      ]
+    },
+    "moduleResolution": "Node",
+    "declaration": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "sourceMap": true,
+    "strictPropertyInitialization": false
+  },
+  "include": ["src/**/*"],
+  "exclude": ["dist/**/*", ".yarn", "node_modules"]
+}
